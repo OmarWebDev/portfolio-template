@@ -1,0 +1,100 @@
+/* :: Navbar Style Start :: */
+.navbar {
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid black;
+
+}
+
+.nav-link {
+    color: white !important;
+}
+.navbar .active {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: var(--bs-danger) !important;
+}
+.navbar .active:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50vh;
+    background: var(--bs-danger);
+    top: 90%;
+}
+
+/* :: Navbar Style End :: */
+
+/* :: Header Style Start :: */
+header {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background: url("../img/R.jpeg") no-repeat fixed center;
+    background-size: cover;
+}
+header .content {
+    background: rgba(0, 0, 0, 0.5);
+}
+header p {
+    font-size: 27px;
+}
+header h1 {
+    font-size: 70px;
+}
+.go__down__button {
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 30px;
+    height: 60px;
+}
+.go__down__button:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--bs-danger);
+    border-radius: 50vh;
+    top: 70%;
+
+    animation: up-down infinite 2000ms;
+}
+@keyframes up-down {
+    0% {
+        top: 70%;
+    }
+    50% {
+        top: 10%;
+    }
+    100% {
+        top: 70%;
+    }
+}
+/* :: Header Style End :: */
+
+/* :: Section 1 Style Start :: */
+#section_1 {
+    margin: 50px 0;
+}
+#section_1 li {
+    margin: 10px 0;
+}
+
+/* :: Section 1 Style End :: */
+
+/* :: Section 2 Style Start :: */
+#section_2 {
+    background-color: rgb(246, 246, 246);
+}
+#section_2 .row * {
+    transition: all 400ms;
+}
+.filter-hide {
+    transition: all 200ms;
+    opacity: 0.5;
+}
+
+/* :: Section 2 Style End :: */
