@@ -92,6 +92,9 @@ header h1 {
 #section_2 .row * {
     transition: all 400ms;
 }
+#section_2 ul li {
+    cursor: pointer;
+}
 .filter-hide {
     transition: all 200ms;
     opacity: 0.5;
